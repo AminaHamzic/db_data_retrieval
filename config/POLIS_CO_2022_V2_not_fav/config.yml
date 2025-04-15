@@ -13,8 +13,8 @@ sqlAlchemyDialect: mssql+pyodbc
 sqlServerDriverName: SQL+Server+Native+Client+10.0
 
 # Credentials [prime]
-dbUsername: sewebsite3
-dbPassword: granted128
+dbUsername:
+dbPassword:
 
 # Paths
 #metadataOutputPath:
