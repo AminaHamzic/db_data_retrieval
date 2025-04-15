@@ -1,0 +1,95 @@
+# Project Information
+#projectName: "Market Profile Data 2024"
+#projectId: "POLIS_CO_2022"
+
+
+# Database Connection
+serverName: 50.19.30.69
+databaseName: POLIS_CO_2022_V2
+connectionCredentialsName: prime
+
+# SQLAlchemy & ODBC
+sqlAlchemyDialect: mssql+pyodbc
+sqlServerDriverName: SQL+Server+Native+Client+10.0
+
+# Credentials [prime]
+dbUsername: sewebsite3
+dbPassword: granted128
+
+# Paths
+#metadataOutputPath:
+#variableDefinitionsPath:
+#tableDefinitionsPath:
+#sourceDirectory:
+#configDirectory:
+geo_file_path: C:\Projects\db_data_retrieval\datasets\POLIS_CO_2022\dp_POLIS_CO_2022\preprocessed_data
+geo_file: C:\Projects\db_data_retrieval\datasets\POLIS_CO_2022\dp_POLIS_CO_2022\preprocessed_data\geo_identifiers.csv
+data_folder: C:\Projects\db_data_retrieval\datasets\POLIS_CO_2022\dp_POLIS_CO_2022\preprocessed_data\data
+
+
+
+###############################################################################
+# geo level information
+################################################################################
+
+geoLevelInformation:
+
+# THE FIRST GEO LEVEL SUCH AS UNITED STATES, WORLD, CANADA, UK, EUROPE, ETC
+# MUST HAVE SHORTER FIPS CODE LENGTH THAN ANY OTHER GEO NESTED UNDER IT
+
+    -
+        - SL010 # Geo_level
+        - Nation    # Geo_level_name
+        - "0"    # FIPS_length
+        - "0"    # PARTIAL_FIPS_length
+        - "0"    # Indent
+    -
+        - SL040    # Geo_level
+        - State    # Geo_level_name
+        - "2"    # FIPS_length
+        - "2"    # PARTIAL_FIPS_length
+        - "1"    # Indent
+    -
+        - SL050    # Geo_level
+        - County    # Geo_level_name
+        - "5"    # FIPS_length
+        - "3"    # PARTIAL_FIPS_length
+        - "2"    # Indent
+    -
+        - SL140    # Geo_level
+        - Census Tract    # Geo_level_name
+        - "11"    # FIPS_length
+        - "6"    # PARTIAL_FIPS_length
+        - "3"    # Indent
+    -
+        - SL150    # Geo_level
+        - Block Group   # Geo_level_name
+        - "12"    # FIPS_length
+        - "1"    # PARTIAL_FIPS_length
+        - "4"    # Indent
+    -
+        - SL170    # Geo_level
+        - City    # Geo_level_name
+        - "7"    # FIPS_length
+        - "5"    # PARTIAL_FIPS_length
+        - "2"    # Indent
+    -
+        - SL320    # Geo_level
+        - Metropolitan Statistical Area/Micropolitan Statistical Area    # Geo_level_name
+        - "7"    # FIPS_length
+        - "5"    # PARTIAL_FIPS_length
+        - "2"    # Indent
+    -
+        - SL871    # Geo_level
+        - ZCTA    # Geo_level_name
+        - "5"    # FIPS_length
+        - "5"    # PARTIAL_FIPS_length
+        - "1"    # Indent
+
+    -
+        - SL872    # Geo_level
+        - Name    # Geo_level_name
+        - "5"    # FIPS_length
+        - "5"    # PARTIAL_FIPS_length
+        - "1"    # Indent
+...

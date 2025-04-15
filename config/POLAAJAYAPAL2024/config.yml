@@ -1,0 +1,58 @@
+# Project Information
+#projectName: "California Favorability Data"
+#projectId: "POLAAJAYAPAL2024"
+
+
+# Database Connection
+serverName: 50.19.30.69
+databaseName: POLAARBWI2024
+connectionCredentialsName: prime
+
+# SQLAlchemy & ODBC
+sqlAlchemyDialect: mssql+pyodbc
+sqlServerDriverName: SQL+Server+Native+Client+10.0
+
+# Credentials [prime]
+dbUsername: sewebsite3
+dbPassword: granted128
+
+# Paths
+#metadataOutputPath:
+#variableDefinitionsPath:
+#tableDefinitionsPath:
+#sourceDirectory:
+#configDirectory:
+geo_file_path: C:\Projects\db_data_retrieval\datasets\POLAAJAYAPAL2024\dp_POLAAJAYAPAL2024\preprocessed_data
+geo_file: C:\Projects\db_data_retrieval\datasets\POLAAJAYAPAL2024\dp_POLAAJAYAPAL2024\preprocessed_data\geo_identifiers.csv
+data_folder: C:\Projects\db_data_retrieval\datasets\POLAAJAYAPAL2024\dp_POLAAJAYAPAL2024\preprocessed_data
+
+
+
+###############################################################################
+# geo level information
+################################################################################
+
+geoLevelInformation:
+
+# THE FIRST GEO LEVEL SUCH AS UNITED STATES, WORLD, CANADA, UK, EUROPE, ETC
+# MUST HAVE SHORTER FIPS CODE LENGTH THAN ANY OTHER GEO NESTED UNDER IT
+
+    -
+        - SL900    # Geo_level
+        - PRECINCT   # Geo_level_name
+        - "10"    # FIPS_length
+        - "10"    # PARTIAL_FIPS_length
+        - "0"    # Indent
+    -
+        - SL500    # Geo_level
+        - CD   # Geo_level_name
+        - "4"    # FIPS_length
+        - "4"    # PARTIAL_FIPS_length
+        - "0"    # Indent
+    -
+        - SL101    # Geo_level
+        - CC   # Geo_level_name
+        - "4"    # FIPS_length
+        - "4"    # PARTIAL_FIPS_length
+        - "0"    # Indent
+...
